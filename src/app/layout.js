@@ -1,9 +1,16 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { Comfortaa } from "next/font/google";
 import "../styles/globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const comfortaa = Comfortaa({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // Select needed weights
+  variable: "--font-comfortaa", // Define CSS variable
 });
 
 const geistMono = Geist_Mono({
@@ -20,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={comfortaa.variable}
       >
         {children}
       </body>

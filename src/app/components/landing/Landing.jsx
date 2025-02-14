@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import mypic from "../../../assets/mypic3.png";
+
 
 function Landing() {
   return (
@@ -7,12 +9,12 @@ function Landing() {
       <div className=" flex justify-center items-center flex-col ">
         <div className="max-w-[80%]">
           <p className="text-[40px]">Hello Mate 👋</p>
-          <p className="text-[50px] font-[700]">I'm Goutham Krishna P S</p>
+          <p className="text-[45px] font-[700] font-comfortaa">
+            I'm Goutham Krishna P S
+          </p>
           <p className="text-[40px]">
-            a{" "}
-            <span className="text-blue-500 font-[700]">
-              Full Stack Developer
-            </span>
+            a <span className="text-blue-500 font-[700]">Full Stack</span>{" "}
+            Developer
           </p>
           <p className="text-[14px] text-gray-500 mt-[20px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure velit
@@ -29,7 +31,17 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div className=" h-screen w-full">
+      <div className="h-screen w-full flex justify-center items-end">
+        {/* <div className="bg-white w-full h-full flex justify-center items-end"> */}
+          <Image
+            src={mypic}
+            className=""
+            width={300}
+            height={600}
+            quality={100}
+            alt="mypic"
+          />
+        {/* </div> */}
       </div>
     </div>
   );

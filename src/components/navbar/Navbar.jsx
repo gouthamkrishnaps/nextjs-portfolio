@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className='flex justify-between items-center h-[50px] w-full sticky top-0  px-[40px]'>
+    <div className='flex justify-between items-center h-[50px] w-full absolute top-0  px-[40px]'>
       <div className=''><p className='text-[30px] font-[700]'>Port<span className='text-blue-500'>folio</span></p></div>
       <div className='flex justify-center items-center gap-[40px]'>
         <p className='text-[13px]'>Home</p>

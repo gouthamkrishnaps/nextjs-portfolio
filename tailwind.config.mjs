@@ -11,6 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        comfortaa: ["var(--font-comfortaa)", "sans-serif"], // Use the CSS variable
+      },
     },
   },
   plugins: [],
