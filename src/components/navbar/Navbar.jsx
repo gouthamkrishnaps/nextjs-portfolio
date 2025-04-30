@@ -12,7 +12,7 @@ function Navbar() {
         <p className='text-[13px]'>Experience</p>
         <p className='text-[13px]'>Contact</p>
       </div>
-      <div>gouthamkrishnaps02@gmail.com</div>
+      <div className='z-10'>gouthamkrishnaps02@gmail.com</div>
     </div>
   )
 }
